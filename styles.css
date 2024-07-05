@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3ef8e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2650px;
+    margin: 0px;
+    background: url(Images/quiz.jpg) repeat center center fixed;
+
+
+
+}
+#outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container {
+    background: linear-gradient(535deg, #9554c0, #ffe1e1);
+    padding: 100px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    text-align: center;
+    border-radius: 5px;
+    
+    
+}
+
+h1 {
+    color: #fffefe;
+    background-image: linear-gradient(45deg, #2020ff, #d77ee7); /* Mix blue and purple */
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #a52a17;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#quiz-container {
+    margin-top: 20px;
+}
+
+#question-container {
+    margin-bottom: 10px;
+}
+
+#options-container button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+#timer {
+    margin: 10px 0;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#review {
+    text-align: left;
+}
+
+/* styles.css */
+
+
+#outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+#quiz-container {
+    margin-top: 20px;
+}
+
+#language-selection {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#timer-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fffbfb;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timer-box {
+    font-size: 26px;
+    color: #333;
+}
+/* styles.css */
+/* styles.css */
+
+.review-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.question-text {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.options-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.options-list li {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.check-icon {
+    margin-left: 10px;
+}
+
+.correct-answer {
+    color: rgb(0, 255, 0);
+}
+
+.incorrect-answer {
+    color: red;
+}

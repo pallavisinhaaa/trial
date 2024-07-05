@@ -1,0 +1,88 @@
+/* home.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5ef0f0;
+    margin: 10;
+    padding: 110px;
+    background: url(Images/home1.jpg) no-repeat center center fixed;
+
+}
+
+#dashboard {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.dashboard-item {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+    transition: background-color 0.3s;
+    background-image: linear-gradient(45deg, #4CAF50, #2196F3); /* Gradient background */
+}
+
+.home {
+    background-image: linear-gradient(45deg, #4CAF50, #1E88E5); /* Mix green and blue */
+}
+
+.rules {
+    background-image: linear-gradient(45deg, #2196F3, #9C27B0); /* Mix blue and purple */
+}
+
+.contact {
+    background-image: linear-gradient(45deg, #FF9800, #F44336); /* Mix orange and red */
+}
+
+.about {
+    background-image: linear-gradient(45deg, #9C27B0, #FFC107); /* Mix purple and yellow */
+}
+
+.logout {
+    background-image: linear-gradient(45deg, #f44336, #fdf9f9); /* Mix red and deep orange */
+}
+
+.dashboard-item:hover {
+    opacity: 0.8;
+}
+
+#welcome-message {
+    text-align: center;
+    background-image: linear-gradient(45deg, #009bfb, #fefefe); /* Mix orange and red */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+#start-quiz-btn {
+    background-image: linear-gradient(45deg, #009bfb, #4300ec); /* Mix orange and red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-quiz-btn:hover {
+    background-color: #060606;
+}
+
+.hidden {
+    display: none;
+}

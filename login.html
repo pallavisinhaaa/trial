@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="outer-container">
+        <h1>Welcome To Skill Bridge</h1>
+        <div id="container">
+            <h1>Programming Quiz</h1>
+            <div id="quiz-container">
+                <div id="language-selection">
+                    <h2>Select Programming Language</h2>
+                    <button onclick="startQuiz('javascript')">JavaScript</button><br>
+                    <button onclick="startQuiz('python')">Python</button><br>
+                    <button onclick="startQuiz('java')">Java</button><br>
+                    <button onclick="startQuiz('php')">PHP</button>
+                </div>
+                <div id="quiz" class="hidden">
+                    <div id="question-container">
+                        <p id="question"></p>
+                    </div>
+                    <div id="options-container"></div>
+                </div>
+                <div id="result" class="hidden">
+                    <h2>Your Score</h2>
+                    <p id="score"></p>
+                    <h3>Review</h3>
+                    <div id="review"></div>
+                    <input type="text" id="username" placeholder="Enter your name">
+                    <button onclick="saveScore()">Save Score</button>
+                    <button onclick="restartQuiz()">Restart Quiz</button>
+                    <button onclick="viewHistory()">View History</button>
+                    <canvas id="pieChart" width="400" height="400"></canvas> <!-- Canvas for Pie Chart -->
+                </div>
+            </div>
+        </div>
+        <div id="timer-container">
+            <div class="timer-box">
+                Time left: <span id="time">30</span> seconds
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

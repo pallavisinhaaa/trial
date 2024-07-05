@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <div id="dashboard">
+        <a href="#" class="dashboard-item home">Home</a>
+        <a href="#" class="dashboard-item rules" onclick="showRules()">Rules</a>
+        <a href="#" class="dashboard-item contact" onclick="showContact()">Contact</a>
+        <a href="#" id="history-link" class="dashboard-item about">History</a>
+        <a href="#" class="dashboard-item logout" onclick="logout()">Logout</a>
+    </div>
+    <div id="welcome-message">
+        <h1>Hey, <span id="username"></span> &#128075;</h1>
+        <p>Welcome to the quiz application!</p>
+        <button id="start-quiz-btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- Rules Section -->
+    <div id="rules" class="hidden">
+        <h2>Rules</h2>
+        <p>Here are the rules of the quiz:</p>
+        <ul>
+            <li>Rule 1: Lorem ipsum dolor sit amet.</li>
+            <li>Rule 2: Consectetur adipiscing elit.</li>
+            <li>Rule 3: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+        </ul>
+    </div>
+
+
+
+
+    <!-- Contact Section -->
+    <div id="contact" class="hidden">
+        <h2>Contact</h2>
+        <p>Contact us:</p>
+        <ul>
+            <li>Email: sakshithakursakshi75261@gmail.com</li>
+            <li>Phn-no: 620003XXXX.</li>
+            <li>Linkdin: Sakshi</li>
+        </ul>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+
+</html>
